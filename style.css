@@ -1,0 +1,781 @@
+
+/* ! ============================= GENERAL CSS ============================= */
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --brown: #780000;
+  --red: #c1121f;
+  --butter: #fdf0d5;
+  --dark-blue: #003049;
+  --blue: #003049;
+  --gray: rgba(216, 156, 156, 0.181);
+  
+  --white: #fff;
+  --black: #000814;
+
+
+  --container-width-lg: 72%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all 400ms ease;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  color: var(--black);
+  background: var(--butter);
+}
+
+.container{
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+section{
+  padding: 3rem 0;
+}
+
+section h2{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+h1{
+  font-size: 2.4rem;
+} 
+
+h2 {
+  font-size: 1.8rem
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4{
+  font-size: 1.3rem;
+}
+
+a{
+  color: var(--brown);
+  text-decoration: none;
+}
+
+img{
+  width: 1005px;
+  object-fit: cover;
+  display: block;
+}
+
+.btn{
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 1.6px solid darkgray;
+  padding: 0.3rem 1.5rem;
+  border-radius: 3rem;
+  transition: var(--transition);
+}
+
+
+.btn:hover{
+  border: 1.6px solid var(--brown);
+}
+
+.btn-2{
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 1.6px solid darkgray;
+  padding: 0.5rem 1.3rem;
+  border-radius: 3rem;
+  transition: var(--transition);
+}
+
+.btn-2:hover{
+  background: var(--white);
+  color: var(--brown);
+}
+
+/* ! ============================= NAV BAR ============================= */
+
+nav{
+  background-color: var(--brown);
+  width: 100vw;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+
+.nav-cont{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu{
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.nav-cont a{
+  color: var(--white);
+}
+
+.nav-logo{
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.nav-logo span{
+  font-weight: 800;
+}
+
+
+/* ! ============================= HEADER ============================= */
+
+
+header{
+  position: relative;
+  top: 8rem;
+  height: 100%;
+  padding: 1rem 1rem;
+}
+
+.header-buttons{
+  display: flex;
+  gap: 2rem;
+}
+
+.styled-btn{
+  color: var(--white);
+  background-color: var(--brown);
+  border-color: var(--brown);
+}
+
+.header-main{
+  display: grid;
+  grid-template-columns: 38% 57%;
+  height: 66vh;
+  margin-top: 2rem;
+  gap: 3rem;
+  align-items: center;
+  padding: 1rem;
+  }
+
+.header-left{
+  background: transparent;
+  border: 2px solid var(--brown);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  height: 56vh;
+  
+}
+
+.header-left form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+} 
+
+.fa-location-dot.fa-lg,
+.fa-calendar-days.fa-lg{
+  color: var(--brown);
+  font-size: 1.7rem;
+  
+}
+
+label[for=from],[for=to],[for=departure],[for=class] {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+select#city {
+  color: var(--brown);
+  padding: 0.4rem 0 0.4rem 0;
+  background: transparent;
+  border-bottom: 1px solid #780000;
+  font-size: 1.4rem;
+}
+
+select#city option{
+  color: var(--blue);
+}
+
+
+.select-city{
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 4rem;
+}
+
+input[type=date]{
+  color: var(--brown);
+  font-size: 1.3rem;
+  padding: 0.4rem 0 0.4rem 0;
+  background: transparent;
+  width: 75%;
+}
+
+.dep-btn{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn-today{
+  background-color: transparent;
+  border: 1px solid var(--brown);
+  padding: 0.5rem 0.8rem;
+  border-radius:7px;
+  color: var(--brown);
+}
+
+.btn-tomorrow{
+  color: var(--butter);
+  background-color: var(--brown);
+  border: 1px solid var(--brown);
+  padding: 0.5rem 0.8rem;
+  border-radius:7px;
+}
+
+.search-btn{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-search{
+  background: var(--blue);
+  color: white;
+  padding: 0.7rem 5rem;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+}
+
+.departure-time{
+  margin-bottom: 2rem;
+}
+
+.header-right{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.header-right-policy{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.policy{
+  background: var(--blue);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--white);
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  transition: var(--transition);
+}
+
+/*.policy:hover{
+ box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+
+}*/
+
+.policy p{
+  font-size: 0.9rem;
+}
+
+
+/* ! ============================= SERVICES ============================= */
+
+.services{
+  margin-top: 10rem;
+}
+
+.services-cont{
+  background-color: var(--gray);
+  height: 27rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem 2rem;
+}
+
+.service{
+  background-color: var(--brown);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px rgba(93, 93, 93, 0.3);
+}
+
+.services-cont h5{
+  font-size: 1.2rem;
+}
+
+.service-icon{
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+
+/* ! ============================= POPULAR TRIPS ============================= */
+
+.popular-trip{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  height: 30rem;
+}
+
+.bus-det{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #8180808a;
+  height: 4rem;
+  color: var(--black);
+}
+
+.city-name h4{
+  font-size: 1.2rem;
+}
+
+.city-name p{
+  font-size: 1rem;
+}
+
+.tour-price{
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.tour-price p span{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.price-icon{
+  color: var(--red);
+}
+
+.most-pop-destination a{
+  color: var(--brown);
+  font-weight: 600;
+}
+
+.most-pop-destination{
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+/* ! ============================= FAQs ============================= */
+
+.faq-cont{
+  background-color: var(--gray);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.5rem;
+
+}
+
+.faq{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.faq h4{
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.faq p{
+  display: none;
+  margin-top: 0.7rem;
+}
+
+.faq.open p {
+  display: block;
+}
+
+.faq i{
+  font-size: 1.5rem;
+}
+
+
+/* ! ============================= FOOTER ============================= */
+
+
+footer{
+  background: var(--brown);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+footer a{
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+footer i{
+  color: white;
+}
+
+.footer-cont{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  justify-content: center;
+}
+
+footer > div h5{
+  margin-bottom: 1rem;
+}
+
+.footer-socials{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-socials li{
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+.footer-socials.fa-brands{
+  color: var(--white);
+}
+
+
+
+/* ! ============================= MEDIA QUERIES (MOBILE) ============================= */
+
+@media only screen and (max-width: 600px) {
+
+  h2{
+    font-size: 1.3rem;
+  }
+
+  .container{
+    width: var(--container-width-sm);
+  }
+
+  nav{
+    height: 3rem;
+  }
+
+  .nav-logo{
+    font-size: 1.4rem;
+  }
+
+  .nav-menu{
+    display: none;
+  }
+
+    /* ============= HEADER ==============*/
+
+
+  header{
+    top: 3rem;
+    padding: 0.5rem;
+  
+  }
+
+  .header-buttons{
+    gap: 0.7rem;
+    justify-content: center;
+  }
+
+  .header-buttons a{
+    font-size: 0.9rem;
+  }
+
+  .btn{
+    padding: 0.2rem 0.7rem;
+
+  }
+
+  .header-main{
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0.5rem;
+    padding: 0.6rem;
+    height: 100%;
+    gap: 2rem;
+  }
+
+
+  .header-left{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .header-left-cont{
+    width: 60vw;
+    padding: 0.5rem 0.7rem;
+    border: 1.7px solid var(--brown);
+    border-radius: 10px;
+ 
+  }
+
+
+  .btn-search{
+    padding: 0.5rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .fa-location-dot.fa-lg,
+  .fa-calendar-days.fa-lg{
+    font-size: 1.3rem;
+  }
+
+  label[for=from],[for=to],[for=departure],[for=class] {
+    font-size: 0.7rem;
+  }
+
+  select#city{
+    font-size: 1rem;
+  }
+
+  .select-city{
+    gap: 0.6rem;
+  }
+
+  input[type=date]{
+    font-size: 1rem;
+    width: 85%;
+  }
+
+  .btn-dep{
+    padding: 0.3rem 0.4rem;
+    font-size: 0.7rem;
+    border-radius: 4px;
+  }
+
+  .header-right-policy{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header-right h2{
+    font-size: 1.3rem;
+  }
+
+  .policy{
+    padding: 0.5rem 0.7rem;
+  }
+
+  .policy i{
+    font-size: 3rem;
+  }
+
+  .policy p{
+    font-size: 0.8rem;
+    width: 8rem;
+  }
+
+    /* ============= SERVICES ==============*/
+
+
+  .services{
+    margin-top: 2rem;
+    padding-bottom: 0;
+
+  }
+
+  .services-cont{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .service{
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    padding-top: 2rem;
+    width: 26rem;
+  }
+
+  .service p{
+    width: 20rem;
+  }
+
+  .services-cont h5{
+    font-size: 1rem;
+  } 
+
+
+    /* ============= POPULAR TRIPS ==============*/
+
+
+  .popular-trips{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .popular-trip{
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    gap: 0.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .bus-det{
+    height: 2rem;
+    width: 100%;
+  }
+
+  .city-name h4{
+    font-size: 0.7rem;
+  }
+
+  .city-name p{
+    font-size: 0.6rem;
+  }
+
+  .tour-price p span{
+    font-size: 0.7rem;
+  }
+
+  .tour-price p{
+    font-size: 0.6rem;
+  }
+
+  .fa-angles-right.fa-lg{
+    font-size: 0.8rem;
+  }
+
+  .most-pop-destination{
+    display: inline-block;
+    text-align: center;
+
+    width: 90%;
+    height: 4rem;
+  }
+
+  .most-pop-destination a{
+    font-weight: 600;
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  .most-pop-dest-head{
+    margin-bottom: 1rem  ;
+  }
+
+
+    /* ============= FAQs ==============*/
+
+
+  .faqs{
+    padding-top: 0;
+  }
+
+  .faqs h2{
+    margin: 2rem 0 1rem;
+  }
+
+  .faq{
+    padding: 0.3rem 0.5rem;
+  }
+
+  .faq h4{
+    font-size: 0.9rem;
+  }
+
+  .faq p{
+    font-size: 0.7rem;
+  }
+
+    /* ============= FOOTER ==============*/
+
+  footer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  footer a{
+    font-size: 0.7rem;
+  }
+
+  .footer-cont{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .service{
+    width: 20rem;
+  }
+
+  .header-left-cont{
+    width: 68vw;
+ 
+  }
+}
+

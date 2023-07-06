@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticketlanka</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./train.css">
+  <link rel="icon" href="./Sources/favicon.png">
+
+
+  <!-- ================= FONT AWESOME ICONS CDN ===================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+  <!-- ================= FONT AWESOME ICONS CDN ===================-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <!-- =============================== NAVBAR =============================== -->
+
+  <nav>
+    <div class="container nav-cont">
+        <a href="index.html" class="nav-logo"><span>Ticketlanka</span>.com</a>
+        <ul class="nav-menu">
+          <li><a href="#"></i> Trips</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#" class="btn-2">Sign in</a></li>
+        </ul>    
+    </div>
+  </nav>
+
+
+
+
+  <!-- =============================== HEADER =============================== -->
+
+  <header>
+    <div class="container header-cont">
+      <div >
+        <div class="header-buttons">
+          <a href="./index.html" class="btn"><i class="fa-solid fa-bus fa-lg"></i> Bus</a>
+          <a href="./train.html" class="btn styled-btn"><i class="fa-solid fa-train-subway fa-lg"></i> Train</a>
+          <a href="./hotel.html" class="btn"><i class="fa-solid fa-hotel fa-lg"></i> Hotel</a>
+        </div>
+        <div class="header-main">
+          <div class="header-left">
+            <div class="header-left-top">
+              <div class="select-city select-city-from">
+                <i class="fa-sharp fa-solid fa-location-dot fa-lg"></i>
+                <form>
+                  <label for="from">From</label>
+                  <label for="city"></label>
+                  <select id="city">
+                    <option value="city">Select the city</option>
+                    <option value="Kandy">Kandy</option>
+                    <option value="Colombo">Colombo</option>
+                    <option value="Jaffna">Jaffna</option>
+                    <option value="Galle">Galle</option>
+                    <option value="Batiicaloa">Batiicaloa</option>
+                    <option value="Matale">Matale</option>
+                    <option value="Kurunegala">Kurunegala</option>
+                    <option value="mannar">Mannar</option>
+                    <option value="Mirissa">Mirissa</option>
+                  </select>
+                </form>
+              </div>
+  
+              <div class="select-city select-city-to">
+                <i class="fa-sharp fa-solid fa-location-dot fa-lg"></i>
+                <form>
+                  <label for="to">To</label>
+                  <label for="city"></label>
+                  <select id="city">
+                    <option value="city">Select the city</option>
+                    <option value="Kandy">Kandy</option>
+                    <option value="Colombo">Colombo</option>
+                    <option value="Jaffna">Jaffna</option>
+                    <option value="Galle">Galle</option>
+                    <option value="Batiicaloa">Batiicaloa</option>
+                    <option value="Matale">Matale</option>
+                    <option value="Kurunegala">Kurunegala</option>
+                    <option value="mannar">Mannar</option>
+                    <option value="Mirissa">Mirissa</option>
+                  </select>
+                </form>
+              </div>
+  
+              <div class="select-city departure-time">
+                <i class="fa-solid fa-calendar-days fa-lg"></i>
+                <form>
+                  <label for="departure">Departure</label>
+                  <input type="date" name="Date">
+                </form>
+                <!-- <div class="dep-btn">
+                  <button class="btn-today">Today</button>
+                  <button class="btn-tomorrow">Tomorrow</button>
+                </div> -->
+              </div>
+  
+              <div class="select-city select-city-class">
+                <i class="fa-duotone fa-rectangles-mixed fa-lg"></i>
+                <form>
+                  <label for="class">Class</label>
+                  <label for="city"></label>
+                  <select id="city">
+                    <option value="class">Select train class</option>
+                    <option value="1st">1st class</option>
+                    <option value="2nd">2nd class </option>
+                    <option value="3rd">3rd class</option>
+                
+                  </select>
+                </form>
+              </div>
+            </div>            
+            <div class="search-btn">
+              <a href="#" class="btn-search">SEARCH</a>
+            </div>
+          </div>
+
+          <div class="header-right">
+            <h2>Cheap Train Tickets</h2>
+            <div class="header-right-policy">
+  
+              <article class="policy">
+                <span>
+                  <i class="fa-solid fa-headset fa-lg"></i>
+                </span>
+                <p>24 / 7 Customer Service</p>
+              </article>
+  
+              <article class="policy">
+                <span>
+                  <i class="fa-solid fa-credit-card fa-lg"></i>
+                </span>
+                <p>Secure Payment</p>
+              </article>
+  
+              <!-- <article class="policy">
+                <span>
+                  <i class="fa-solid fa-coins fa-2xl"></i>
+                </span>
+                <p>No Commission, Free</p>
+              </article> -->
+  
+              <article class="policy">
+                <span>
+                  <i class="fa-solid fa-users fa-lg"></i>
+                </span>
+                <p>More than 1 Million Users a Month</p>
+              </article>
+  
+              <article class="policy">
+                <span>
+                  <i class="fa-sharp fa-solid fa-business-time fa-lg"></i>
+                </span>
+                <p>Buy Your Ticket in 2 Minutes</p>
+              </article>
+  
+              <!-- <article class="policy">
+                <span>
+                  <i class="fa-solid fa-recycle fa-2xl"></i>
+                </span>
+                <p>Full Refunds on Cancelled Tickets</p>
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- =============================== SERVICES =============================== -->
+ 
+
+  <section class="services">
+    <h2>Ticketlanka.com for Train Tickets</h2>
+    <div class="container services-cont">
+      <article class="service">
+        <div class="service-icon">
+          <i class="fa-solid fa-headset fa-2xl"></i>
+        </div>
+        <h5>24/7 Customer Services</h5>
+        <p>
+          Our customer service team is always here and ready to support you 24/7 for all the transactions you make through ticketlanka.com.
+        </p>
+      </article>
+
+      <article class="service">
+        <div class="service-icon">
+          <i class="fa-regular fa-credit-card fa-2xl"></i>
+        </div>
+        <h5>Secure Payment</h5>
+        <p>
+          You can make all your bus ticket purchases easily, quickly, and reliably from your home, office, or with your mobile phone from our website.
+        </p>
+      </article>
+
+      <article class="service">
+        <div class="service-icon">
+          <i class="fa-solid fa-hand-holding-dollar fa-2xl"></i>
+        </div>
+        <h5>Budget Friendly</h5>
+        <p>
+          We offer you the opportunity to search and compare bus tickets of all companies. You can easily find and buy bus tickets that fit your budget.
+        </p>
+      </article>
+
+      <article class="service">
+        <div class="service-icon">
+          <i class="fa-solid fa-bus-simple fa-2xl"></i>
+        </div>
+        <h5>Best Carriers</h5>
+        <p>
+          We have gathered the most exclusive carriers for you. Now you can easily find the appropriate bus ticket, and purchase it online.
+        </p>
+      </article>
+    </div>
+  </section>
+
+
+   <!-- =============================== POPULAR TRIPS =============================== -->
+
+
+   <section class="popular-trips">
+    <h2>Popular Train Trips</h2>
+    <div class="container popular-trip">
+
+      <article>
+        <a href="" class="bus-det">
+          <div class="city-name">
+            <h4>Kandy - Colombo</h4>
+            <p>Bus Ticket</p>
+          </div>
+          <div class="tour-price">
+             <p>from <span>LKR 300</span></p>
+             <span class="price-icon">
+              <i class="fa-solid fa-angles-right fa-lg"></i>
+             </span>
+          </div>
+        </a>
+      </article>
+
+      <article>
+        <a href="" class="bus-det">
+          <div class="city-name">
+            <h4>Kandy - Ella</h4>
+            <p>Bus Ticket</p>
+          </div>
+          <div class="tour-price">
+             <p>from <span>LKR 250</span></p>
+             <span class="price-icon">
+              <i class="fa-solid fa-angles-right fa-lg"></i>
+             </span>
+          </div>
+        </a>
+      </article>
+
+      <article>
+        <a href="" class="bus-det">
+          <div class="city-name">
+            <h4>Colombo - Jaffna</h4>
+            <p>Bus Ticket</p>
+          </div>
+          <div class="tour-price">
+             <p>from <span>LKR 1300</span></p>
+             <span class="price-icon">
+              <i class="fa-solid fa-angles-right fa-lg"></i>
+             </span>
+          </div>
+        </a>
+      </article>
+
+      <article>
+        <a href="" class="bus-det">
+          <div class="city-name">
+            <h4>Badulla - Colombo</h4>
+            <p>Bus Ticket</p>
+          </div>
+          <div class="tour-price">
+             <p>from <span>LKR 650</span></p>
+             <span class="price-icon">
+              <i class="fa-solid fa-angles-right fa-lg"></i>
+             </span>
+          </div>
+        </a>
+      </article>
+
+      <article>
+        <a href="" class="bus-det">
+          <div class="city-name">
+            <h4>Benthota - Colombo</h4>
+            <p>Bus Ticket</p>
+          </div>
+          <div class="tour-price">
+             <p>from <span>LKR 700</span></p>
+             <span class="price-icon">
+              <i class="fa-solid fa-angles-right fa-lg"></i>
+             </span>
+          </div>
+        </a>
+      </article>
+
+      <article>
+        <a href="" class="bus-det">
+          <div class="city-name">
+            <h4>Mathale - Kandy</h4>
+            <p>Bus Ticket</p>
+          </div>
+          <div class="tour-price">
+             <p>from <span>LKR 270</span></p>
+             <span class="price-icon">
+              <i class="fa-solid fa-angles-right fa-lg"></i>
+             </span>
+          </div>
+        </a>
+      </article>
+
+      <article>
+        <a href="" class="bus-det">
+          <div class="city-name">
+            <h4>Nanu Oya - Kandy</h4>
+            <p>Bus Ticket</p>
+          </div>
+          <div class="tour-price">
+             <p>from <span>LKR 600</span></p>
+             <span class="price-icon">
+              <i class="fa-solid fa-angles-right fa-lg"></i>
+             </span>
+          </div>
+        </a>
+      </article>
+
+      <article>
+        <a href="" class="bus-det">
+          <div class="city-name">
+            <h4>Galle - Kandy</h4>
+            <p>Bus Ticket</p>
+          </div>
+          <div class="tour-price">
+             <p>from <span>LKR 700</span></p>
+             <span class="price-icon">
+              <i class="fa-solid fa-angles-right fa-lg"></i>
+             </span>
+          </div>
+        </a>
+      </article>
+
+      <article>
+        <a href="" class="bus-det">
+          <div class="city-name">
+            <h4>Colombo - Trinco</h4>
+            <p>Bus Ticket</p>
+          </div>
+          <div class="tour-price">
+             <p>from <span>LKR 1050</span></p>
+             <span class="price-icon">
+              <i class="fa-solid fa-angles-right fa-lg"></i>
+             </span>
+          </div>
+        </a>
+      </article>
+
+      <article>
+        <a href="" class="bus-det">
+          <div class="city-name">
+            <h4>Hatton - Kandy</h4>
+            <p>Bus Ticket</p>
+          </div>
+          <div class="tour-price">
+             <p>from <span>LKR 450</span></p>
+             <span class="price-icon">
+              <i class="fa-solid fa-angles-right fa-lg"></i>
+             </span>
+          </div>
+        </a>
+      </article>
+
+      <article>
+        <a href="" class="bus-det">
+          <div class="city-name">
+            <h4>Colombo - Batticaloa</h4>
+            <p>Bus Ticket</p>
+          </div>
+          <div class="tour-price">
+             <p>from <span>LKR 500</span></p>
+             <span class="price-icon">
+              <i class="fa-solid fa-angles-right fa-lg"></i>
+             </span>
+          </div>
+        </a>
+      </article>
+
+      <article>
+        <a href="" class="bus-det">
+          <div class="city-name">
+            <h4>Colombo - Puthalam</h4>
+            <p>Bus Ticket</p>
+          </div>
+          <div class="tour-price">
+             <p>from <span>LKR 300</span></p>
+             <span class="price-icon">
+              <i class="fa-solid fa-angles-right fa-lg"></i>
+             </span>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <h2 class="most-pop-dest-head">Most Popular Destinations</h2>
+    <div class="most-pop-destination">
+      <a href="#">Kandy  &#124;</a>
+      <a href="#">Colombo  &#124;</a>
+      <a href="#">Galle  &#124;</a>
+      <a href="#">Jaffna  &#124;</a>
+      <a href="#">Trincomalee  &#124;</a>
+      <a href="#">Ella  &#124;</a>
+      <a href="#">Nuwara Eliya  &#124;</a>
+      <a href="#">Mirissa  &#124;</a>
+      <a href="#">Batticaloa  &#124;</a>
+      <a href="#">Mathale  &#124;</a>
+      <a href="#">Panadura  &#124;</a>
+      <a href="#">Badulla  &#124;</a>
+      <a href="#">Negombo</a>
+    </div>
+  </section>
+
+
+   <!-- =============================== FAQs =============================== -->
+
+   <section class="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="container faq-cont">
+
+      <article class="faq">
+        <div class="question-ans">
+          <h4>How can I buy bus ticket from ticketlanka?</h4>
+          <p>
+            You can use our website to buy bus tickets from ticketlanka.com. After entering the place and date you want to travel, you can compare all the trips and buy your ticket by entering your passenger and card information for the trip that suits you.
+          </p>
+        </div>
+        <div class="faq-icon">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </article>
+
+      <article class="faq">
+        <div class="question-ans">
+          <h4>Is ticketlanka.com reliable?</h4>
+          <p>
+            You can buy your ticket safely on ticketlanka.com. The purchases you make on our site are secured with an SSL certificate. In addition, 3D Security assurance is offered at the payment step when purchasing a bus ticket.</p>
+        </div>
+        <div class="faq-icon">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </article>
+
+      <article class="faq">
+        <div class="question-ans">
+          <h4>Is commision paid when buying ticket from ticketlanka.com?</h4>
+          <p>
+            ticketetlanka.com does not charge commission. When buying a bus ticket using ticketetlanka.com, you only pay the price of your ticket.
+          </p>
+        </div>
+        <div class="faq-icon">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </article>
+
+      <article class="faq">
+        <div class="question-ans">
+          <h4>How can I cancel my bus ticket?</h4>
+          <p>
+            You can cancel your bus ticket in accordance with the cancellation conditions determined by the companies. Cancellation conditions are communicated to you at the time of purchase.
+          </p>
+        </div>
+        <div class="faq-icon">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </article>
+
+      <article class="faq">
+        <div class="question-ans">
+          <h4>When will I be refunded when I cancel my bus ticket?</h4>
+          <p>
+            After your cancellation is confirmed, the refund will be transferred to your bank without any deductions. The amount you paid will be reflected in your account within 7 working days, depending on your bank's return procedures. In transactions made with debit cards, this process may take 1-20 business days. The return process is completely dependent on your bank and ticketetlanka.com has no right to intervene.
+          </p>
+        </div>
+        <div class="faq-icon">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  
+  <!-- =============================== FOOTER =============================== -->
+
+  <footer>
+    <div class="container footer-cont">
+      <div class="footer-1">
+        <h5>Bus Ticket</h5>
+        <ul class="bus-tickets">
+          <li><a href="#">Bus Trips</a></li>
+          <li><a href="#">All Stations</a></li>
+          <li><a href="#">Carriers</a></li>
+          <li><a href="#">Bus Terminals</a></li>
+          <li><a href="#">Bus Ticket Purchase Guide</a></li>
+          <li><a href="#">Bus Ticket Campaigns</a></li> 
+        </ul>
+      </div>
+
+      <div class="footer-2">
+        <h5>Popular Carriers</h5>
+        <ul class="popular-carriers">
+          <li><a href="#">Udarata Menike</a></li>
+          <li><a href="#">Ruhunu Kumari</a></li>
+          <li><a href="#">Tikiri Menike</a></li>
+          <li><a href="#">Senkadagala Menike</a></li>
+          <li><a href="#">Yal Devi</a></li>
+          <li><a href="#">Meenagaya</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-3">
+        <h5>Ticketlanka</h5>
+        <ul class="ticketlanka">
+          <li><a href="#">Bus Ticket</a></li>
+          <li><a href="#">Train Ticket</a></li>
+          <li><a href="#">Hotel Reservation</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Bus Use of Terms</a></li>
+          <li><a href="#">Help and Contact</a></li>
+          <li><a href="#">Cancellation and Change</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-4">
+        <h5>Follow Us</h5>
+        <ul class="footer-socials">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#">Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./main.js"></script>
+</body>
+</html>

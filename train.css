@@ -1,0 +1,186 @@
+.header-main{
+  display: grid;
+  align-items: top;
+  grid-template-columns: 56% 44%;
+  height: 55vh;
+  margin-top: 2rem;
+  gap: 1rem;
+ 
+}
+
+.header-left{
+  border: 2px solid var(--brown);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  height: 45vh;
+
+}
+
+.header-right{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+.header-left-top{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+
+.header-right-policy{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.policy{
+  background: var(--blue);
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 0.7rem;
+  color: var(--white);
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  transition: var(--transition);
+}
+
+.policy p{
+  width: 10rem;
+  font-size: 0.9rem;
+}
+
+.select-city-class{
+  margin-bottom: 2rem;
+}
+
+
+
+/* ! ============================= SERVICES ============================= */
+
+
+.services{
+  margin-top: 5rem;
+}
+
+
+/* ! ============================= POPULAR TRIPS ============================= */
+
+.popular-trip{
+  width: 60rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  height: 22rem;
+  margin-bottom: 4rem;
+}
+
+.bus-det{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #8180808a;
+  height: 3rem;
+  color: var(--black);
+  width: 20rem;
+}
+
+.city-name h4{
+  font-size: 1rem;
+}
+
+.city-name p{
+  font-size: 0.8rem;
+}
+
+.tour-price{
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.tour-price p span{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+/* ============================= MEDIA QUERIES FOR (MOBILE) ============================= */
+
+
+@Media only screen and (max-width: 600px) {
+  .header-main{
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+  }
+
+  .header-left{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .select-city{
+    margin-bottom: 1rem;
+  }
+
+  .header-left-top{
+    width: 100%
+  }
+
+  /*================= SERVICES ==================*/
+  .services{
+    margin-top: 2rem;
+  }
+
+  /*================= POPULAR TRIPS ==================*/
+
+
+  .popular-trip{
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    height: 100%;
+    gap: 0.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .bus-det{
+    height: 2rem;
+    width: 100%;
+  }
+
+  .city-name h4{
+    font-size: 0.7rem;
+  }
+
+  .city-name p{
+    font-size: 0.6rem;
+  }
+
+  .tour-price p span{
+    font-size: 0.7rem;
+  }
+
+  .tour-price p{
+    font-size: 0.6rem;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .header-left{
+    width: 90vw;
+  }
+
+  .header-right{
+    width: 85vw;
+  }
+}
